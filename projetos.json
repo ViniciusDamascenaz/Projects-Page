@@ -1,0 +1,16 @@
+{
+    "PDF_Printer":{
+        "nome": "PDF_Printer",
+        "descricao":"Este é um aplicativo simples que captura prints da tela e os salva em um arquivo PDF. Ele é útil para gerar relatórios visuais, documentações ou armazenar imagens de forma organizada em um único arquivo.",
+        "terminado":"sim",
+        "imagem":["imagens/pdfprinter.png", "imagens/pdfprinter2.png"],
+        "tamanho": 400
+    },
+    "Debate de IAs":{
+        "nome": "Debate de IAs",
+        "descricao":"Esta aplicação, desenvolvida com Streamlit, hospeda duas IAs que realizam debates sobre temas pré-selecionados pelo usuário. A plataforma permite explorar diferentes perspectivas e raciocínios das IAs, proporcionando um ambiente dinâmico de discussões automatizadas.",
+        "terminado":"sim",
+        "imagem":["imagens/debate.png"],
+        "tamanho": 600
+    }
+}
