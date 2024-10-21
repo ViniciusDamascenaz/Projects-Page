@@ -24,6 +24,9 @@ if add_selectbox in coleta_nomes():
     st.write(f'{projetos[add_selectbox]['descricao']}')
     for i in projetos[add_selectbox]['imagem']:
         image = st.image(i, width=projetos[add_selectbox]['tamanho'])
+    file = open(f"{projetos[add_selectbox]['git']}", "r")
+    st.write(file.read())
+    
         
 
 else:
