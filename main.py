@@ -19,14 +19,18 @@ add_selectbox = st.sidebar.selectbox(
 if add_selectbox in coleta_nomes():
     with open("projetos.json", "r") as file:
         projetos = json.load(file)
-
-    st.markdown(f"# {projetos[add_selectbox]['nome']}")
-    st.write(f'{projetos[add_selectbox]['descricao']}')
-    for i in projetos[add_selectbox]['imagem']:
-        image = st.image(i, width=projetos[add_selectbox]['tamanho'])
-    file = open(f"{projetos[add_selectbox]['git']}", "r")
-    st.write(file.read())
-    
+    if add_selectbox == "Portifólio":
+        st.markdown(f"# {projetos[add_selectbox]['nome']}")
+        file = open(f"{projetos[add_selectbox]['git']}", "r")
+        st.write(file.read())
+    else:
+        st.markdown(f"# {projetos[add_selectbox]['nome']}")
+        st.write(f'{projetos[add_selectbox]['descricao']}')
+        for i in projetos[add_selectbox]['imagem']:
+            image = st.image(i, width=projetos[add_selectbox]['tamanho'])
+        file = open(f"{projetos[add_selectbox]['git']}", "r")
+        st.write(file.read())
+        
         
 
 else:
