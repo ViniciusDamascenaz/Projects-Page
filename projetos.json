@@ -1,4 +1,8 @@
 {
+    "Portifólio":{
+        "nome": "Portifólio",
+        "git":"descricoes/portifolio.txt"
+    },
     "PDF_Printer":{
         "nome": "PDF_Printer",
         "descricao":"Este é um aplicativo simples que captura prints da tela e os salva em um arquivo PDF. Ele é útil para gerar relatórios visuais, documentações ou armazenar imagens de forma organizada em um único arquivo.",
