@@ -20,7 +20,6 @@ if add_selectbox in coleta_nomes():
     with open("projetos.json", "r") as file:
         projetos = json.load(file)
     if add_selectbox == "Portifólio":
-        st.markdown(f"# {projetos[add_selectbox]['nome']}")
         file = open(f"{projetos[add_selectbox]['git']}", "r")
         st.write(file.read())
     else:
